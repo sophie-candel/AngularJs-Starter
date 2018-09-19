@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/sjcandel/techniques-de-judo#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.3.1",
     "angular": "^1.6.6",
     "jquery": "^3.3.1"
   },
