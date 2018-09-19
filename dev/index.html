@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sophie Candel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="sources/img/favicon.png" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="main.css" media="screen">
+
+    <!-- JS -->
+    <script src="../node_modules/angular/angular.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="bundle.js"></script>
+
+    <!-- Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-88250453-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-88250453-1');
+    </script> -->
+
+</head>
+
+<body>
+
+    <section ng-controller="portfolio" class="p-t-50 p-b-50">
+        <div class="wrapper">
+            <div ng-repeat="i in oeuvres">
+                <p>{{i.titre}}</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

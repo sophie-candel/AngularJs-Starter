@@ -1,0 +1,73 @@
+/*----------------------------------------------------------------------------------------------*/
+/* FLEXBOX */
+/*----------------------------------------------------------------------------------------------*/
+
+.flex-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    /*@include prefix(align-items, center, webkit ms);*/
+    @include prefix(flex-wrap, wrap !important, webkit ms);
+  }
+
+  // DIRECTION
+  .is-column {
+    @include prefix(flex-direction, column !important, webkit ms);
+  }
+  
+  .is-row {
+    @include prefix(flex-direction, row !important, webkit ms);
+  }
+  
+
+  // JUSTIFY-CONTENT
+  .is-horizontal-start {
+    @include prefix(justify-content, flex-start !important, webkit ms);
+  }
+
+  .is-horizontal-center {
+    @include prefix(justify-content, center !important, webkit ms);
+  }
+  
+  .is-horizontal-end {
+    @include prefix(justify-content, flex-end !important, webkit ms);
+  }
+  
+  .is-horizontal-spacearound {
+    @include prefix(justify-content, space-around !important, webkit ms);
+  }
+  
+  .is-horizontal-extremes {
+    @include prefix(justify-content, space-between !important, webkit ms);
+  }
+
+  .is-horizontal-evenly {
+    @include prefix(justify-content, space-evenly !important, webkit ms);
+  }
+  
+
+  // ALIGN-ITEMS
+  .is-vertical-start {
+    @include prefix(align-items, flex-start !important, webkit ms);
+  }
+  
+  .is-vertical-center {
+    @include prefix(align-items, center !important, webkit ms);
+  }
+  
+  .is-vertical-end {
+    @include prefix(align-items, flex-end !important, webkit ms);
+  }
+  
+  
+  // FLEX-GROW
+  $flex-values: '1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11' '12';
+  @each $val in $flex-values {
+    .flex-#{$val} {
+      flex: #{$val} !important;
+      width: 100%;
+    }
+  }
+  

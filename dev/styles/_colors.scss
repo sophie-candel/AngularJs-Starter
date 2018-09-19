@@ -1,0 +1,18 @@
+/*----------------------------------------------------------------------------------------------*/
+/* COLORS */
+/*----------------------------------------------------------------------------------------------*/
+$val: ("white") ("white"), ("blue") ($color-blue), ("green") ($color-green),
+  ("grey1") ($color-grey1), ("grey2") ($color-grey2), ("grey3") ($color-grey3),
+  ("grey4") ($color-grey4), ("grey5") ($color-grey5);
+
+@each $i in $val {
+  .bg-#{nth($i, 1)} {
+    background-color: #{nth($i, 2)} !important;
+  }
+  .is-#{nth($i, 1)} {
+    color: #{nth($i, 2)} !important;
+    a {
+      color: #{nth($i, 2)} !important;
+    }
+  }
+}

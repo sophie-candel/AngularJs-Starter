@@ -1,0 +1,106 @@
+/*----------------------------------------------------------------------------------------------*/
+/* POSITION */
+/*----------------------------------------------------------------------------------------------*/
+$position-val: ("absolute") ("absolute"), ("relative") ("relative"),
+  ("fixed") ("fixed");
+
+@each $i in $position-val {
+  .is-#{nth($i, 1)} {
+    position: #{nth($i, 2)};
+  }
+}
+
+/*----------------------------------------------------------------------------------------------*/
+/* WIDTH & HEIGHT */
+/*----------------------------------------------------------------------------------------------*/
+$val: (65) ("65px"), (100) ("100px"), (150) ("150px"), (200) ("200px"),
+  (250) ("250px"), (280) ("280px"), (300) ("300px"), (350) ("350px"),
+  (400) ("400px"), (450) ("450px"), (500) ("500px"), (800) ("800px"),
+  (1000) ("1000px"), (1024) ("1024px");
+
+@each $i in $val {
+  .w-#{nth($i, 1)} {
+    width: #{nth($i, 2)};
+  }
+  .h-#{nth($i, 1)} {
+    height: #{nth($i, 2)};
+  }
+  .maxw-#{nth($i, 1)} {
+    max-width: #{nth($i, 2)};
+  }
+  .minw-#{nth($i, 1)} {
+    min-width: #{nth($i, 2)};
+  }
+  .maxh-#{nth($i, 1)} {
+    max-height: #{nth($i, 2)};
+  }
+  .minh-#{nth($i, 1)} {
+    min-height: #{nth($i, 2)};
+  }
+}
+
+@each $i in $val {
+  .heigth-#{nth($i, 1)} {
+    height: #{nth($i, 2)} !important;
+  }
+}
+
+/*----------------------------------------------------------------------------------------------*/
+/* MARGIN & PADDING */
+/*----------------------------------------------------------------------------------------------*/
+$values: ("center") ("0 auto"), (0) ("0"), (2) ("2px"), (5) ("5px"),
+  (10) ("10px"), (15) ("15px"), (20) ("20px"), (25) ("25px"), (30) ("30px"),
+  (35) ("35px"), (40) ("40px"), (45) ("45px"), (50) ("50px"), (55) ("55px"),
+  (60) ("60px"), (65) ("65px"), (70) ("70px"), (100) ("100px");
+
+@each $i in $values {
+  .p-#{nth($i, 1)} {
+    padding: #{nth($i, 2)} !important;
+  }
+  .p-t-#{nth($i, 1)} {
+    padding-top: #{nth($i, 2)} !important;
+  }
+  .p-r-#{nth($i, 1)} {
+    padding-right: #{nth($i, 2)} !important;
+  }
+  .p-b-#{nth($i, 1)} {
+    padding-bottom: #{nth($i, 2)} !important;
+  }
+  .p-l-#{nth($i, 1)} {
+    padding-left: #{nth($i, 2)} !important;
+  }
+  .p-y-#{nth($i, 1)} {
+    padding-top: #{nth($i, 2)} !important;
+    padding-bottom: #{nth($i, 2)} !important;
+  }
+  .p-x-#{nth($i, 1)} {
+    padding-left: #{nth($i, 2)} !important;
+    padding-right: #{nth($i, 2)} !important;
+  }
+}
+
+@each $i in $values {
+  .m-#{nth($i, 1)} {
+    margin: #{nth($i, 2)} !important;
+  }
+  .m-t-#{nth($i, 1)} {
+    margin-top: #{nth($i, 2)} !important;
+  }
+  .m-r-#{nth($i, 1)} {
+    margin-right: #{nth($i, 2)} !important;
+  }
+  .m-b-#{nth($i, 1)} {
+    margin-bottom: #{nth($i, 2)} !important;
+  }
+  .m-l-#{nth($i, 1)} {
+    margin-left: #{nth($i, 2)} !important;
+  }
+  .m-y-#{nth($i, 1)} {
+    margin-top: #{nth($i, 2)} !important;
+    margin-bottom: #{nth($i, 2)} !important;
+  }
+  .m-x-#{nth($i, 1)} {
+    margin-left: #{nth($i, 2)} !important;
+    margin-right: #{nth($i, 2)} !important;
+  }
+}

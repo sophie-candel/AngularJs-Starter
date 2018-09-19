@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700");
+
+@font-face {
+  font-family: "dry_brushregular";
+  src: url("sources/fonts/dry_brush-webfont.woff2") format("woff2"),
+    url("sources/fonts/dry_brush-webfont.woff") format("woff"),
+    url("sources/fonts/dry_brush-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*----------------------------------------------------------------------------------------------*/
+/* TYPOS */
+/*----------------------------------------------------------------------------------------------*/
+html {
+  font-family: $font-family-main;
+  color: $color-grey1;
+  background-color: white;
+  font-weight: $font-weight-1;
+}
+
+p {
+  // font-weight: $font-weight-2;
+  font-size: $font-size-m;
+}
+
+a {
+  color: $color-grey1;
+  text-decoration: none;
+}
+
+.subtitle {
+  font-family: $font-family-sub;
+  // color: $color-orange;
+  @media screen and (max-width: $width-xs) {
+    padding-left: 0 !important;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase !important;
+}
+
+.label {
+  text-align: left;
+  font-size: $font-size-s;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.floating-label {
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 20px;
+  background-color: white;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  color: $color-grey3;
+  @media screen and (max-width: $width-xs) {
+    font-size: 1em;
+    top: -30px;
+  }
+}
+.separator {
+  height: 2px;
+  border-top: solid 1px $color-grey3;
+  margin: 20px 0 20px 0;
+  position: relative;
+}
+.alert {
+  position: absolute;
+  top: 8px;
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+  text-align: center;
+  background: #f8deb5;
+  font-style: italic;
+  font-size: $font-size-s;
+  border-radius: $border-radius;
+}
+
+.icon {
+  font-size: $font-size-l;
+  z-index: 100;
+}
+// SIZE
+.is-xxs {
+  font-size: $font-size-xxs !important;
+}
+.is-xs {
+  font-size: $font-size-xs !important;
+}
+.is-s {
+  font-size: $font-size-s !important;
+}
+.is-m {
+  font-size: $font-size-m !important;
+}
+.is-l {
+  font-size: $font-size-l !important;
+  @media screen and (max-width: $width-xs) {
+    font-size: 1.2em !important;
+  }
+}
+.is-xl {
+  font-size: $font-size-xl !important;
+  @media screen and (max-width: $width-xs) {
+    font-size: $font-size-l !important;
+  }
+}
+.is-xxl {
+  font-size: $font-size-xxl !important;
+  @media screen and (max-width: $width-xs) {
+    font-size: $font-size-l !important;
+  }
+  @media screen and (max-width: $width-xxs) {
+    font-size: $font-size-m !important;
+  }
+}
+
+// WEIGHT
+.weight-300 {
+  font-weight: $font-weight-1 !important;
+}
+.weight-400 {
+  font-weight: $font-weight-2 !important;
+}
+.weight-700,
+b,
+strong {
+  font-weight: $font-weight-3 !important;
+}
+
+// TEXT-ALIGN
+$values: ("left") (left), ("center") (center), ("right") (right);
+
+@each $i in $values {
+  .text-#{nth($i, 1)} {
+    text-align: #{nth($i, 2)} !important;
+  }
+}

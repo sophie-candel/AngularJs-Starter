@@ -1,0 +1,43 @@
+/*----------------------------------------------------------------------------------------------*/
+/* LAYOUT */
+/*----------------------------------------------------------------------------------------------*/
+$width-xxs: 320px;
+$width-xs: 544px;
+$width-sm: 768px;
+$width-md: 992px;
+$width-lg: 1200px;
+$width-xl: 1400px;
+
+$border-radius: 2px;
+$shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+/*----------------------------------------------------------------------------------------------*/
+/* TYPOGRAPHY */
+/*----------------------------------------------------------------------------------------------*/
+
+$font-family-main: "Source Sans Pro", sans-serif;
+$font-family-sub: "dry_brushregular";
+
+$font-size-xxl: 10rem !default; // 20px
+$font-size-xl: 4rem !default; // 20px
+$font-size-l: 1.5rem !default; // 17px
+$font-size-m: 1rem !default; // 14px
+$font-size-s: 0.8rem !default; //12px
+$font-size-xs: 0.7rem !default; //10px
+$font-size-xxs: 0.6rem !default; // 9px
+
+$font-weight-1: 300 !default;
+$font-weight-2: 400 !default;
+$font-weight-3: 700 !default;
+
+/*----------------------------------------------------------------------------------------------*/
+/* COLORS */
+/*----------------------------------------------------------------------------------------------*/
+
+$color-grey1: #4b4b4b;
+// $color-grey1: #333333;
+$color-grey2: #828282;
+$color-grey3: #bdbdbd;
+$color-grey4: #e0e0e0;
+$color-grey5: #f2f2f2;
+$color-blue: #5983e1;
+$color-green: #e7e24f;
